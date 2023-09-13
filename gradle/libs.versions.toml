@@ -1,0 +1,24 @@
+[versions]
+# Android
+constraintlayout = "2.1.4"
+material = "1.9.0"
+appcompat = "1.6.1"
+core-ktx = "1.12.0"
+
+[libraries]
+# Android
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+
+[plugins]
+
+[bundles]
+androidx = [
+    "androidx-core-ktx",
+    "androidx-appcompat",
+    "material",
+    "androidx-constraintlayout"
+]
+
